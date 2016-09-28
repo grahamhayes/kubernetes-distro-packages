@@ -9,7 +9,7 @@ rm -f kubernetes/master/kubernetes-node_$K8S_VERSION_amd64.deb
 
 mkdir -p kubernetes/source/kubernetes/v$K8S_VERSION
 cd kubernetes/source/kubernetes/v$K8S_VERSION
-curl -L https://storage.googleapis.com/kubernetes-release/release/v$K8S_VERSION/kubernetes.tar.gz | tar xvz
+cat ~/kubernetes.tar.gz | tar xvz
 # Nightly
 # https://github.com/GoogleCloudPlatform/kubernetes/releases/download/v$K8S_VERSION/kubernetes.tar.gz
 tar xfvz kubernetes/server/kubernetes-server-linux-amd64.tar.gz
